@@ -35,27 +35,27 @@ Public Class CalculatorEngine
     ''' Supported operators: "+", "-", "x", "%".
     ''' </summary>
     Public Shared Function TryCalculate(first As Double, second As Double, op As String, ByRef result As Double) As Boolean
+        Dim ret As Boolean = True
+
         Select Case op
             Case "+"
                 result = first + second
-                Return True
             Case "-"
                 result = first - second
-                Return True
             Case "x", "*"
                 result = first * second
-                Return True
             Case "%", "/"
                 If second = 0 Then
                     Throw New DivideByZeroException("Cannot divide by zero.")
                 End If
 
                 result = first / second
-                Return True
             Case Else
                 result = 0
-                Return False
+                ret = False
         End Select
+
+        Return ret
     End Function
 
 End Class
