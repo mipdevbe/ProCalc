@@ -7,6 +7,11 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProCalc", "ProCalc\ProCalc.
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestProCalc", "TestProCalc\TestProCalc.vbproj", "{6741706E-6336-4903-BC66-6586A4E5B5D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		VB.NET-ProCalc.gif = VB.NET-ProCalc.gif
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
