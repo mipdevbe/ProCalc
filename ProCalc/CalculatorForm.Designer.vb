@@ -342,6 +342,7 @@ Partial Class CalculatorForm
         Controls.Add(TableLayoutPanel2)
         Controls.Add(TableLayoutPanel1)
         Controls.Add(txtDisplay)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "CalculatorForm"
