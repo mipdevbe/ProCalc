@@ -45,7 +45,7 @@ Public Class CalculatorEngine
             Case "x", "*"
                 result = first * second
                 Return True
-            Case "%"
+            Case "%", "/"
                 If second = 0 Then
                     Throw New DivideByZeroException("Cannot divide by zero.")
                 End If
